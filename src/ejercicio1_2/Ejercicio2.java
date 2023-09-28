@@ -13,8 +13,9 @@ public class Ejercicio2 {
 		System.out.println("Escribe el numero que quieres comprobar");
 		num = sc.nextInt();
 		num1 = num%7;
-		solucion = num1<num ? num1  :  7 -num1;
+		solucion = num1==0 ? 0  :  7-num1;
 		System.out.println("La solucion es " + solucion);
+		sc.close();
 		
 		
 		

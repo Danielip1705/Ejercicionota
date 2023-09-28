@@ -9,12 +9,16 @@ public class Ejercicio3 {
 		int num;
 		int num1;
 		int solucion;
+		int resto;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Escribe el numero que quieres comprobar");
 		num = sc.nextInt();
-		num1 = num%7;
-		solucion = num1<num ? num1  :  7 -num1;
-		System.out.println("La solucion es " + solucion);
+		num1 = sc.nextInt();
+		resto = num%num1;
+		solucion = resto==0 ? 0  :  num1-num;
+		System.out.println("Para que " + num1 + " sea multiplo de " + num + " hay que sumarle "+ solucion);
+		sc.close();
+		
 		
 		
 		
