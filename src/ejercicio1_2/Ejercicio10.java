@@ -14,7 +14,7 @@ public class Ejercicio10 {
 		a = (int)num;
 		System.out.println("Has lanzado el algoritmo a una distancia de " + a*100);
 		
-		
+		sc.close();
 	}
 
 }
