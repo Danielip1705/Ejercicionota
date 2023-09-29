@@ -31,8 +31,13 @@ public class Ejercicio3 {
 		
 		//hacemos que el identificador resto sea el resto de num y num1
 		resto = num%num1;
+		//el ternario explicamos que si el resto es igual a 0, que de cero y si no hacemos una resta a num1 y num
 		solucion = resto==0 ? 0  :  num1-num;
+		
+		//imprimimos el resultado
 		System.out.println("Para que " + num1 + " sea multiplo de " + num + " hay que sumarle "+ solucion);
+		
+		//Cerramos Scanner
 		sc.close();
 		
 		
