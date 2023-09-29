@@ -12,6 +12,7 @@ public class Ejercicio8 {
 		double totalniño;
 		double totaladulto;
 		double total;
+		final double descuento = 5;
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("¿Cuantas entradas infantiles has comprado?");
@@ -26,7 +27,7 @@ public class Ejercicio8 {
 		
 		total = totalniño+totaladulto;
 		
-		descuentototal = total>100 ? total-(total*(5/100)) : 0;
+		descuentototal = total>100 ? total-total*descuento/100 : 0;
 		
 		System.out.println("Tienes que pagar un total de :" +descuentototal );
 		sc.close();
